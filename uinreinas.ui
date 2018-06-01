@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UINReinas</class>
+ <widget class="QMainWindow" name="UINReinas">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>545</width>
+    <height>531</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="iconos.qrc">
+    <normaloff>:/iconos/iconoVentana.png</normaloff>:/iconos/iconoVentana.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow
+{
+	background-image: url(:/iconos/gradient7.png);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QTextBrowser" name="textBrowser_2">
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Sea n la cantidad de reinas, filas y columnas, para formalizar el problema se generan las condiciones que tendrá que cumplir una valuación para satisfacer la fórmula.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Condiciones (caso n=2):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;1 - Hay una reina por fila: &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;(c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;11&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;  ∨ c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;12&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;)  ∧ (c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;21&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;  ∨ c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;22&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; color:#ff0000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#000000;&quot;&gt;En FND:&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; color:#ff0000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;{ {c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;11&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; , c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;12&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;} , {c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;21&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; , c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;22&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;} } &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#000000;&quot;&gt;2 - Si en en una casilla hay una reina, entonces no hay ninguna otra en su misma fila, columna o diagonal: &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;- c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;11&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; ==&amp;gt; (~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;12&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; ∧ ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;21&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; ∧ ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;22&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; color:#0055ff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;- c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;12&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; ==&amp;gt; (~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;22&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; ∧ ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;21&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; color:#0055ff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;- c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;21&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; ==&amp;gt; ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;22&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; color:#0055ff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#000000;&quot;&gt;Aplicando distributiva:&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; (~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;11  &lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;V ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;12&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;) ∧ (~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;11&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; V ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;21&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;) ∧ (~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;11&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; V ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;22&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; color:#0055ff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;(~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;12&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; V ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;22&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;) ∧ (~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;12&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; V ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;21&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; color:#0055ff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; (~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;21&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; V ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;22&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; color:#ff0000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#000000;&quot;&gt;En FND:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;{ { ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;11&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; , ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;12&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;} ,  {~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;11&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; , ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;21&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;} , {~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;11&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; , ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;22&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;} }&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; color:#0055ff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;{ { ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;12&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; , ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;22&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;} ,  {~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;12&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; , ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;21&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;} }&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; color:#0055ff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;{ { ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;21&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; , ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;22&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;} }&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; color:#ff0000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#000000;&quot;&gt;3 - El conjunto de cláusulas resulta ser:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;{ {c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;11&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; , c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;12&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;} , {c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;21&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; , c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;22&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;} , { ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;11&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; , ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;12&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;} ,  &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;{~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;11&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; , ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;21&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;} , {~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;11&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; , ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;22&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;} , { ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;12&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; , ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;22&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;} ,  &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;{~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;12&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; , ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;21&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;} , { ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;21&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt; , ~c&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff; vertical-align:sub;&quot;&gt;22&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#0055ff;&quot;&gt;} } &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt; color:#ff0000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="textBrowser">
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'sans-serif'; font-size:12pt; color:#252525;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:12pt; color:#252525; background-color:#ffffff;&quot;&gt;El problema de las &lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:12pt; font-weight:600; color:#252525; background-color:#ffffff;&quot;&gt;n reinas&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:12pt; color:#252525; background-color:#ffffff;&quot;&gt; consiste en ubicar n reinas en un tablero de nxn casillas, de tal forma que no haya dos reinas en la misma fila, columna o diagonal. &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'sans-serif'; font-size:12pt; color:#252525;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:12pt; color:#252525; background-color:#ffffff;&quot;&gt;El problema original fue creado por Max Bezzel y consistía en ubicar 8 reinas en un tablero de ajedrez.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'sans-serif'; font-size:12pt; color:#252525;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:12pt; color:#252525;&quot;&gt;En el área de la informática, el problema se generaliza para n reinas, donde n es un número natural positivo.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'sans-serif'; font-size:12pt; color:#252525;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:12pt; color:#252525;&quot;&gt;En esta aplicación se busca abordar este problema desde la lógica proposicional para ayudarte a entenderla más fácilmente.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'sans-serif'; font-size:12pt; color:#252525;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; dir='rtl' style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'sans-serif'; font-size:12pt; color:#252525;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ejemplo : 1&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;Ingrese la cantidad de reinas:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="buddy">
+           <cstring>lineN</cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineN">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ingrese valor del 1 al 9.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonN">
+          <property name="text">
+           <string>Fijar N</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;Ingrese la reina que desea fijar:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineReinas">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ejemplo: 2,3.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="maxLength">
+           <number>3</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushFijarReina">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ingrese la posición de la reina que desee fijar separado por una coma. Ejemplo: (1,4)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Fijar reina</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="espacio0">
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+	background-color: transparent;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;Reinas fijas:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextBrowser" name="textBrowserReinasFijas"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="espacio1">
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+	background-color: transparent;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QPushButton" name="pushResolver">
+        <property name="text">
+         <string>Ver resolución</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushValuaciones">
+        <property name="text">
+         <string>Ver valuaciones</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushTableros">
+        <property name="text">
+         <string>Ver tableros</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>545</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionNuevo"/>
+   </widget>
+   <widget class="QMenu" name="menuAyuda">
+    <property name="title">
+     <string>Ayuda</string>
+    </property>
+    <addaction name="action_Que_es_esto"/>
+    <addaction name="actionExplicaci_n"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuAyuda"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAtras"/>
+   <addaction name="separator"/>
+   <addaction name="actionNuevo"/>
+  </widget>
+  <action name="actionNuevo">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/iconos/add121.png</normaloff>:/iconos/add121.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nuevo</string>
+   </property>
+  </action>
+  <action name="actionAtras">
+   <property name="icon">
+    <iconset>
+     <normaloff>back28.png</normaloff>back28.png</iconset>
+   </property>
+   <property name="text">
+    <string>Atras</string>
+   </property>
+  </action>
+  <action name="action_Que_es_esto">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/iconos/configuration12.png</normaloff>:/iconos/configuration12.png</iconset>
+   </property>
+   <property name="text">
+    <string>¿Que es esto?</string>
+   </property>
+  </action>
+  <action name="actionExplicaci_n">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/iconos/configuration12.png</normaloff>:/iconos/configuration12.png</iconset>
+   </property>
+   <property name="text">
+    <string>Explicación</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>lineN</tabstop>
+  <tabstop>pushButtonN</tabstop>
+  <tabstop>lineReinas</tabstop>
+  <tabstop>pushFijarReina</tabstop>
+  <tabstop>pushResolver</tabstop>
+  <tabstop>pushValuaciones</tabstop>
+  <tabstop>textBrowser</tabstop>
+  <tabstop>textBrowser_2</tabstop>
+  <tabstop>textBrowserReinasFijas</tabstop>
+  <tabstop>pushTableros</tabstop>
+ </tabstops>
+ <resources>
+  <include location="iconos.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>lineReinas</sender>
+   <signal>returnPressed()</signal>
+   <receiver>pushFijarReina</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>329</x>
+     <y>269</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>409</x>
+     <y>270</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineN</sender>
+   <signal>returnPressed()</signal>
+   <receiver>pushButtonN</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>341</x>
+     <y>236</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>402</x>
+     <y>239</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

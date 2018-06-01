@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/iconos">
+        <file>grafo_imagen.png</file>
+        <file>reina.png</file>
+        <file>info_dpll.png</file>
+        <file>info_ejemploDpll.png</file>
+        <file>info_eliminacionPura.png</file>
+        <file>info_eliminacionUnitaria.png</file>
+        <file>add121.png</file>
+        <file>approve9.png</file>
+        <file>back28.png</file>
+        <file>circular194.png</file>
+        <file>close33.png</file>
+        <file>configuration12.png</file>
+        <file>right127.png</file>
+        <file>search67.png</file>
+        <file>iconoVentana.png</file>
+        <file>icono_guardar.png</file>
+        <file>gradient7.png</file>
+        <file>iconoVentanaTransparente.png</file>
+        <file>Tablero.png</file>
+        <file>icono_herramienta.png</file>
+        <file>icono_abrir.png</file>
+    </qresource>
+</RCC>
